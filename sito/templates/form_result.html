@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../static/css/style.css">
+  <title>Riepilogo modulo</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__text">
+      <h1>Calcola l'efficienza energetica della tua casa!</h1>
+      <p>Riepilogo dei dati inviati.</p>
+    </div>
+  </header>
+  <main>
+    {% block content %}
+    <div class="form-result">
+      <h2>Nome: {{ name }}</h2>
+      <p><strong>Indirizzo:</strong> {{ address }}</p>
+      <p><strong>Data richiesta:</strong> {{ date }}</p>
+      <p><strong>Email:</strong> {{ email }}</p>
+    </div>
+    {% endblock %}
+  </main>
+  <footer>
+
+  </footer>
+</body>
+</html>
